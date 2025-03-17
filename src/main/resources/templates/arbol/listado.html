@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+    <head th:replace="~{layout/plantilla :: head}">
+        <title>Práctica #3 - Grupo #7</title>
+    </head>
+    <body>
+        <header th:replace="~{layout/plantilla :: header}"/>
+        
+        <h2>Listado de Arboles</h2>     
+        
+        <section th:replace="~{arbol/fragmentos :: botonesAgregar}"/>
+        <section th:replace="~{arbol/fragmentos :: agregarArbol}"/>        
+        <section th:replace="~{arbol/fragmentos :: listadoArboles}"/>        
+        
+        <footer th:replace="~{layout/plantilla :: footer}"/>
+    </body>
+</html>
